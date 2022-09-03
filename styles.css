@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+html{
+    --primary: #174DBA;
+    --gray: #EFF0F3;
+    --white:#FFFFFF;
+    --dark: #505050;
+    --newgray:#eff0f311;
+    font-family: 'helveticaMedium',sans-serif;
+}
+header{
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+img[src="Assets/logo-uppersoft.png"]{
+    display: block;
+    width: 200px;
+    padding: 10px;
+
+}
+.accessTitle{
+    font-size: 32px;
+    padding: 10px 0 20px 0;
+    color: var(--primary);
+}
+.container{
+    background-color: var(--gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px ;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.loginArea{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px ;
+    color: var(--primary);
+}
+.buttonAreas{
+    display: grid;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:40px ;
+    font-size: 16px;
+
+}
+input,
+select{
+    height: 34px;
+    border: var(--primary) solid 1px ;
+    border-radius: 5px;
+    width: 90%;
+    padding-left:10px;
+    padding-right:10px;
+}
+input[type= "text"],input[type="password"]{
+    padding-left: 10px;
+    align-self: center;
+}
+input[type="radio"]{
+    width: 20px;
+    margin-right: 5px;
+}
+button{
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    margin-bottom: 10px;
+    font-family: 'helveticaMedium',sans-serif;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+}
+h3{
+    font-size: 16px;
+    font-weight: lighter;
+    align-self: center;
+}
+.loginItens{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+//CADASTRO
+
+p{
+    color: lightgray;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.registerCard{
+    background-color: var(--white);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin-top: 65px;
+}
+
+
+.infoArea{
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    
+    font-size: 16px;
+
+}
+.inputItens{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.checkboxArea{
+    display: flex;
+    justify-content: center;
+    align-itens: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.radio{
+    display: flex;
+    flex-direction: colum;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.radioItens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+
+//USUÁRIO
+.content1{
+    background-color: var(--gray);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px ;
+
+}
+
+.localUsers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:50px;
+    margin-bottom: 40px;
+    padding: 0 50px;
+}
+
+.cards{
+    background-color: var(--white);
+    display: flex;
+    flex: 1;
+    height: 200px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100%;
+    gap: 15px;
+    color: var(--primary) ;
+}   
+img[src = "Assets/baixados.jpg"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.editLink{
+    
+    align-self: flex-start;
+    
+     
+    
+}
+img[src = "Assets/edit-icon.png"]{
+    width: 30px;
+}
+.userTitle{
+    margin: 50px;
+    margin-top: 100px;
+    font-size: 32px;
+    color: var(--primary);
+    align-self: flex-start;
+    padding-left: 90px;
+
+}
+.userInfo{
+    display: flex;
+    align-self: flex-end ;
+    padding-right:100px ;
+    color: var(--dark);
+    font-weight: lighter;
+}
+.userEmail{
+    color: var(--dark);
+    font-size:16px;
+    font-weight: 600;
+
+}
+.content1 h3{
+    font-size: 16px;
+    font-weight: lighter;
+    align-self: end;
+    padding-bottom: 20px;
+    margin-top: -10px;
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    header{
+        height: auto;
+    }
+    img[src="Assets/logo-uppersoft.png"]{
+        width: 150px;
+    }
+    .card{
+        width: 70%;
+        height: auto;
+    }
+    input{
+        width: 80%;
+
+    }
+    button{
+        width: 80%;
+        
+    }
+
+    .registerCard{
+       width: 70%;
+       margin-top: 65px;
+    }
+
+    .radio{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        
+    }
+    label{
+        font-size: 13px;
+    }
+    
+    
+}
+
+
+
+@font-face {
+    font-family:'helveticaMedium';
+    font-weight: normal;
+    font-style: medium ;
+}

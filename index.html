@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="html" href="cadastro.html">
+
+        <title>Login</title>
+    </head>
+    <body>
+        <header ><img src="Assets/logo-uppersoft.png" alt="UpperLogo"></header>
+        <div class="container">
+            <form class="card" onsubmit="checkLogin(event)">
+                <h2 class="accessTitle">Acessar</h2>
+                <div class="loginBox">
+                    <div class = "loginArea">
+                        <div class="loginItens">
+
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email">
+                        </div>
+
+                        <div class="loginItens">
+                            <label for="pass">Senha</label>
+                            <input type="password" id="pass" name="pass">
+                        </div>
+                    </div>
+                    <div class="buttonAreas" >
+                            <button type="submit">ENTRAR</button>
+                        <h3>Não possui conta ? <a href="cadastro.html">Cadastre-se aqui</a></h2>
+                    </div>
+                </div>
+            </form>            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
